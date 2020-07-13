@@ -344,7 +344,7 @@ public final class AlarmNotifications {
                 NotificationChannel channel = new NotificationChannel(
                         ALARM_MISSED_NOTIFICATION_CHANNEL_ID,
                         context.getString(R.string.default_label),
-                        NotificationManagerCompat.IMPORTANCE_DEFAULT);
+                        NotificationManagerCompat.IMPORTANCE_HIGH);
                 nm.createNotificationChannel(channel);
             }
             summary = new NotificationCompat.Builder(context, ALARM_NOTIFICATION_CHANNEL_ID)
